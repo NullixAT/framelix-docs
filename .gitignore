@@ -1,0 +1,7 @@
+config-editable.php
+.svn
+.idea
+node_modules
+modules/*
+!modules/Framelix
+!modules/Demo
