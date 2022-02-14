@@ -8,6 +8,7 @@ if (!defined("FRAMELIX_MODULE")) {
 ?>
 <script type="application/json">
     {
+        "backendDefaultView": "Framelix\\Demo\\View\\Index",
     "compiler": {
         "Demo": {
             "js": {

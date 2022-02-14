@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Welcome",
+    "entries": [
+      {
+        "file": "index.md"
+      },
+      {
+        "url": "https://github.com/NullixAT/framelix-docs",
+        "title": "GitHub Repository"
+      }
+    ]
+  },
+  {
+    "title": "Setup",
+    "entries": [
+      {
+        "title": "Get started",
+        "file": "nav"
+      }
+    ]
+  }
+]

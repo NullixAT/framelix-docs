@@ -2,6 +2,7 @@
 
 namespace Framelix\Demo\View;
 
+
 use Framelix\Framelix\View\Backend\View;
 
 /**
@@ -20,7 +21,7 @@ class Index extends View
      */
     public function onRequest(): void
     {
-
+        $this->showContentBasedOnRequestType();
     }
 
     /**
