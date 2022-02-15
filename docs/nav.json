@@ -34,6 +34,10 @@
       {
         "title": "Coding standards",
         "file": "basics/coding-standards.md"
+      },
+      {
+        "title": "Modules",
+        "file": "basics/modules.md"
       }
     ]
   }
