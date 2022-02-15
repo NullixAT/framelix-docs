@@ -19,5 +19,22 @@
         "file": "setup/index.md"
       }
     ]
+  },
+  {
+    "title": "Basics",
+    "entries": [
+      {
+        "title": "About",
+        "file": "basics/about.md"
+      },
+      {
+        "title": "Features",
+        "file": "basics/features.md"
+      },
+      {
+        "title": "Coding standards",
+        "file": "basics/coding-standards.md"
+      }
+    ]
   }
 ]
