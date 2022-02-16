@@ -38,6 +38,10 @@
       {
         "title": "Modules",
         "file": "basics/modules.md"
+      },
+      {
+        "title": "Configuration",
+        "file": "basics/configuration.md"
       }
     ]
   }

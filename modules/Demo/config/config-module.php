@@ -1,4 +1,5 @@
 <?php
+
 // prevent loading directly in the browser without framelix context
 if (!defined("FRAMELIX_MODULE")) {
     die();
@@ -9,31 +10,31 @@ if (!defined("FRAMELIX_MODULE")) {
 <script type="application/json">
     {
         "backendDefaultView": "Framelix\\Demo\\View\\Index",
-    "compiler": {
-        "Demo": {
-            "js": {
-                "demo": {
-                    "files": [
-                        {
-                            "type": "folder",
-                            "path": "js",
-                            "recursive": true
-                        }
-                    ]
-                }
-            },
-            "scss": {
-                "demo": {
-                    "files": [
-                        {
-                            "type": "folder",
-                            "path": "scss",
-                            "recursive": true
-                        }
-                    ]
+        "compiler": {
+            "Demo": {
+                "js": {
+                    "demo": {
+                        "files": [
+                            {
+                                "type": "folder",
+                                "path": "js",
+                                "recursive": true
+                            }
+                        ]
+                    }
+                },
+                "scss": {
+                    "demo": {
+                        "files": [
+                            {
+                                "type": "folder",
+                                "path": "scss",
+                                "recursive": true
+                            }
+                        ]
+                    }
                 }
             }
         }
     }
-}
 </script>
