@@ -24,6 +24,8 @@ This give you the benefit to define default config in `config-module.php` and th
 * `compiler` - Is explained separatly in the [compiler](compiler.md) tutorial
 * `userRoles` - An array of key/value pair (See `Framelix\config-module.php` for examples)
 * `userTokenCookieName` - The cookie name where login hash will be stored
+* `backendLogo` - A relative path from module public folder to a image file for your backend logo
+* `backendIcon` - A relative path from module public folder to a image file for your backend favicon
 
 ## Example config
 
