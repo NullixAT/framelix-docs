@@ -42,6 +42,10 @@
       {
         "title": "Configuration",
         "file": "basics/configuration.md"
+      },
+      {
+        "title": "Compiler",
+        "file": "basics/compiler.md"
       }
     ]
   }
