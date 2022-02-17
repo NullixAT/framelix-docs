@@ -48,5 +48,14 @@
         "file": "basics/compiler.md"
       }
     ]
+  },
+  {
+    "title": "Storables",
+    "entries": [
+      {
+        "title": "Basics",
+        "file": "storables/basics.md"
+      }
+    ]
   }
 ]
