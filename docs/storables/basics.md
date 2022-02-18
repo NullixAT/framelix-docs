@@ -2,7 +2,8 @@
 title: Storable Basics
 ---
 
-Storables are a very important core feature of Framelix.
+Storables are a very important core feature of Framelix. Before that, you should read
+the [database section](../database/basics.md) how to set up the database.
 
 With Storables you basically store, modify, update, delete everything in your database.
 
@@ -52,6 +53,16 @@ class SimpleDemo extends Storable
 
 Let's break it down.
 
+## Ids
+
+Each saved storable has a unique id across ALL storables in the database. This is done by only one table has an
+auto_increment id, which is on `framelix__id`. At the time a storable is inserted the first time, a entry
+in `framelix__id` is generated which generates a new unique. This id is then used in the storables own table as primary
+key on column `id`.
+
+So the result is, if you only have an id and know nothing elase, you can find out the exact entry from the database,
+even you don't know the storable type, because this id is gueranteed to not be used for another storable.
+
 ## Property definition
 
 Properties in storables are defined via `PhpDoc` on the class with the `@property` annotation. The first section in the
@@ -70,6 +81,8 @@ Property types can be:
 * All of the above-mentioned types can also be an array by adding `[]` to the type, so example: `float[]`
 * `mixed` - Which can store ANY data that can be converted to a json string. The value stored in this will be
   automatically stored as a JSON string in the database in a LONGTEXT field.
+* Each property can also be declared with `null` which then is considered optional - In this example only `email`
+  and `flagActive` must be set in order to store it in the database
 
 An [extreme example](../../index.phphub.com/NullixAT/framelix-tests/blob/main/modules/FramelixTests/src/Storable/TestStorable2.php)
 of all possible datatypes is in our unit test repository
@@ -110,3 +123,35 @@ To make a storable, you have to extend your class at least from `Storable` or `S
 provides all features for a storable, with one property, `id`. `StorableExtended` includes 4 more properties which
 automatically stores `createTime`, `updateTime`, `createUser`, `updateUser` on the corresponding store action. This is
 recommended for almost all Storables, when you ever want to know the create and update infos.
+
+## Store/Update/Delete
+
+Storing is as easy as you may think - You only have to call `->store()`
+
+````php
+// create new object
+$obj = new \Framelix\Demo\Storable\SimpleDemo();
+$obj->email = "my@email.com";
+$obj->flagActive = true;
+$obj->store();
+````
+
+Updating is just the same...
+
+````php
+// fetching object, more on fetching in a separate page...
+$obj = \Framelix\Demo\Storable\SimpleDemo::getByConditionOne('email = {0}', ['my@email.com']);
+$obj->email = "myothermail@email.com";
+$obj->store();
+````
+
+Deleting, also a one-liner...
+
+````php
+$obj = \Framelix\Demo\Storable\SimpleDemo::getByConditionOne('email = {0}', ['my@email.com']);
+$obj->delete();
+````
+
+
+
+

@@ -50,11 +50,24 @@
     ]
   },
   {
+    "title": "Database",
+    "entries": [
+      {
+        "title": "Basics",
+        "file": "database/basics.md"
+      }
+    ]
+  },
+  {
     "title": "Storables",
     "entries": [
       {
         "title": "Basics",
         "file": "storables/basics.md"
+      },
+      {
+        "title": "Fetch entries",
+        "file": "storables/fetch.md"
       }
     ]
   }
