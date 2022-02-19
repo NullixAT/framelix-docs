@@ -102,21 +102,6 @@ the `modules/Framelix/src/Db/StorableSchemaProperty.php`
 Also in this method, we add a unique index to `email` with `$selfStorableSchema->addIndex()` - This method accept
 multiple property names for multiple column indexes and all most common index types.
 
-## Updating / Creating your database structure
-
-As we said in the beginning, this is all automatically managed by the system. You can either
-call `php modules/Framelix/console.php` from the command-line, with `updateDatabaseSafe` and/or `updateDatabaseUnsafe` -
-Or you can log in into the backend and goto `Developer options -> Update database`.
-
-The database update always split the queries into `safe` and `unsafe` ones.
-
-`safe` queries only add new tables, columns and indexes. You can execute them at any time, they don't modify any
-existing data in your database.
-
-`unsafe` queries do risky things like changing/deleting columns, indexes and datatypes if required. This can result in
-data-loss, due to deletion or data-type migration for example from string to int. Always `triple` check the queries
-before you execute them, having a database backup is even better.
-
 ## Inheritance and make a class a storable
 
 To make a storable, you have to extend your class at least from `Storable` or `StorableExtended`. `Storable` just

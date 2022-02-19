@@ -10,7 +10,7 @@ For all this examples, we use the existing storable `User` and `UserToken` from 
 ## General
 
 The base `Storable` class provide the fetch methods down bellow. Each storable must inherit from this class, so every
-storable has this classes.
+storable have this methods.
 
 The system does check, from which class you call this and does fetch only objects from that class from the database.
 With this way, we have 100% auto-completion, because the editor knows exactly what instances are returned. You don't
@@ -24,7 +24,7 @@ have to guess strings and you don't need special editor extensions to make this 
 * getByCondition
 * getByConditionOne
 
-### getById
+## getById
 
 This is the most basic fetch method. It expects just an id and it will return the object if the id matches to the
 storable from which it is called.
@@ -40,7 +40,7 @@ if($user) {
 }
 ````
 
-#### But what if you don't know the type
+### But what if you don't know the type
 
 You can always also call any fetch method from the abstract storable class, which return the matching storable with that
 id from the database.
@@ -54,22 +54,22 @@ if($storable) {
 }
 ````
 
-### getByIdOrNew
+## getByIdOrNew
 
 It's almost the same as `getById`, with the difference as it always returns an instance of given type. If the instance
 doesn't exist in the database, it returns a new instance of that type, that's not yet is stored in the database.
 
 This is usefull when you are on a page where you can create/edit an entry.
 
-The system does also here some clever caching for you, each id that already have been fetching, will not be fetched
-again, which save performance.
-
-### getByIds
+## getByIds
 
 Same as `getById`, expect it excepts an array of ids and then returns an array of objects. If none of the given ids are
 found in the database, the array just empty but is still an array.
 
-### getByCondition/getByConditionOne
+The system does also here some clever caching for you, each id that already have been fetching, will not be fetched
+again, which save performance.
+
+## getByCondition/getByConditionOne
 
 Here it is where the fun begins. All above methods internally uses `getByCondition` at the end. Both methods are the
 same, except `getByCondition` returns an array with all found storables where `getByConditionOne` return just the first
@@ -90,7 +90,7 @@ $users = \Framelix\Framelix\Storable\User::getByCondition(sort: '-id', limit: 10
 // this array contains the last 10 users from the database
 ````
 
-### Depth joins
+## Depth joins
 
 One awesome feature are automatic depth joins, or reference joins, however you call it. Let's say you want
 all `UserToken` where the referenced user is not locked.

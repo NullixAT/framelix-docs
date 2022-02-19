@@ -68,6 +68,10 @@
       {
         "title": "Fetch entries",
         "file": "storables/fetch.md"
+      },
+      {
+        "title": "Update scheme",
+        "file": "storables/update-scheme.md"
       }
     ]
   }
