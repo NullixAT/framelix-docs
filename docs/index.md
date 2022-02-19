@@ -1,6 +1,8 @@
 ---
-title: Framelix PHP Framework Documentation description: Learn how you can use and develop with Framelix
+title: Framelix PHP Framework Documentation
 ---
+
+Learn how you can use and develop with Framelix.
 
 Please use the left sidebar to navigate through the docs.
 
