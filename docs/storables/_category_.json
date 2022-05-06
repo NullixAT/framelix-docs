@@ -1,0 +1,8 @@
+{
+  "label": "Storables",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Storables are the main and very powerful way to store and get data rom the database."
+  }
+}

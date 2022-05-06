@@ -1,5 +1,6 @@
 ---
 title: Idea, motivation and philosophy of Framelix
+sidebar_position: 1
 ---
 
 It is good to know, what the general idea of a project is, how it has been created and where it should go.

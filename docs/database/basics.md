@@ -1,11 +1,8 @@
 ---
-title: Database Basics
+title: Basics
 ---
 
-Framelix support only mysql/mariadb databases out of the box.
-
-After you have run the initial set up in your browser, where you add db credentials and initialize the database, you
-have a fully functional application.
+Framelix runs on MariaDB (Mysql) by default.
 
 ## Configuration
 

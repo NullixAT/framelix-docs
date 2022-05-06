@@ -1,5 +1,6 @@
 ---
 title: Core features
+sidebar_position: 3
 ---
 
 So, Framelix has some basic core features.

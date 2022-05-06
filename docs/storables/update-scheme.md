@@ -23,8 +23,7 @@ case.
 ## Updating Scheme in Backend UI
 
 In the backend, in `Developer Options -> Update Database` you have a UI to execute and preview those queries. Note that
-you need to have the `Developer` role to enter this page. By default, the admin user don't have this role. Add it to you
-with the backend UI at `User Management`.
+you need to have the `Admin` role to enter this page.
 
 ## Updating Scheme in Command Line
 

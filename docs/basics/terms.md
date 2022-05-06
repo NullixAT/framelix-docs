@@ -1,5 +1,6 @@
 ---
 title: Terminology / How things are named in Framelix
+sidebar_position: 2
 ---
 
 You may come across some words and terms that you may not know, so let us explain the most used terms in Framelix and what they mean.

@@ -1,5 +1,5 @@
 ---
-title: Storable Basics
+title: Basics
 ---
 
 Storables are a very important core feature of Framelix. Before that, you should read
@@ -84,7 +84,7 @@ Property types can be:
 * Each property can also be declared with `null` which then is considered optional - In this example only `email`
   and `flagActive` must be set in order to store it in the database
 
-An [extreme example](../../index.phphub.com/NullixAT/framelix-tests/blob/main/modules/FramelixTests/src/Storable/TestStorable2.php)
+An [extreme example](https://github.com/NullixAT/framelix-tests/blob/main/modules/FramelixTests/src/Storable/TestStorable2.php)
 of all possible datatypes is in our unit test repository
 
 ## Changing default datatypes

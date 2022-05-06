@@ -1,0 +1,8 @@
+{
+  "label": "Database",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Store and get data is the main objective in backend data applications. We provide tools to make it as easy as possible."
+  }
+}
