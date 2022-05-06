@@ -8,8 +8,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Framelix Full-Stack PHP  Framework',
   tagline: 'Develop fast, deploy faster!',
-  url: 'https://framelix.nullix.at',
-  baseUrl: '/',
+  url: 'https://nullixat.github.io',
+  baseUrl: '/framelix-docs/',
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
